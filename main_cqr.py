@@ -137,12 +137,12 @@ if __name__ == '__main__':
     coverage_vec.append(coverage_cp_qnet)
     length_vec.append(length_cp_qnet)
     seed_vec.append(seed)
-    predictions = None
-    with open('concrete-predictions.pkl', 'rb') as infile:
-        predictions = pickle.load(infile)
-    print(predictions)
-    cqr_lower = predictions['y_lower']
-    cqr_upper = predictions['y_upper']
+    # predictions = None
+    # with open('concrete-predictions.pkl', 'rb') as infile:
+    #     predictions = pickle.load(infile)
+    # print(predictions)
+    # cqr_lower = predictions['y_lower']
+    # cqr_upper = predictions['y_upper']
     #### End CQR
     plot_prob(args, range_vals, X_val, y_val, model, cqr_lower, cqr_upper)
 
